@@ -3,21 +3,21 @@ import './index.css'
 
 const ThumbnaliItem = props => {
   const {item, onChange2, isActive} = props
-  const {id, imageUrl, thumbnailAltText} = item
+  const {id, thumbnailUrl, thumbnailAltText} = item
   const ActiveClassName = isActive ? 'active' : ' '
   const onChange1 = () => {
     onChange2(id)
   }
   return (
-    <div className="li1">
+    <li className="li1">
       <button
         className={`btn1 ${ActiveClassName}`}
         type="button"
         onClick={onChange1}
       >
-        <img src={imageUrl} alt={thumbnailAltText} className="img2" />
+        <img src={thumbnailUrl} alt={thumbnailAltText} className="img2" />
       </button>
-    </div>
+    </li>
   )
 }
 export default ThumbnaliItem

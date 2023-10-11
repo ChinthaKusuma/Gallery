@@ -92,20 +92,26 @@ class Gallery extends Component {
       <div className="bgContainer">
         <div className="bg">
           {list.map(each => (
-            <img src={each.imageUrl} alt={each.imageAltText} className="img1" />
+            <img
+              src={each.imageUrl}
+              key={each.id}
+              alt={each.imageAltText}
+              className="img1"
+            />
           ))}
 
           <h1 className="heading">Nature photography</h1>
           <p className="para">Nature Photography by Rahul</p>
-          <div className="one">
+          <ul className="one">
             {imagesList.map(eachItem => (
               <ThumbnaliItem
                 item={eachItem}
                 onChange2={this.onChange2}
                 isActive={eachItem.id === image}
+                key={eachItem.id}
               />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     )
