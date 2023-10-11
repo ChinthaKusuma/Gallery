@@ -1,0 +1,29 @@
+/* Write your code here. */
+.bgContainer {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.img1 {
+  height: 70vh;
+  width: 50vw;
+}
+.one {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-self: flex-start;
+}
+.bg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn1 {
+  background-color: white;
+  border: 0px;
+}

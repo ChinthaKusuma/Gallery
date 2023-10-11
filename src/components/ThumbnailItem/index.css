@@ -1,0 +1,14 @@
+/* Write your code here. */
+.img2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  padding-left: 0px;
+}
+.li1 {
+  margin-right: 20px;
+  margin-left: 0px;
+}
+.active {
+  opacity: 0.5;
+}
